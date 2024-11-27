@@ -1,16 +1,35 @@
-# Recreating the Conda Environment
+# Instructions to Set Up the Environment and Install Packages
 
-Follow these steps to install the required packages for this project.
+These steps will guide you to recreate the conda environment required to run the Jupyter Notebook. 
 
-## Step 1: Using `requirements.txt` 
+## Step 1: Install Conda (if not already installed)
 
-1. Install Python 3.10.5 (if not already installed).
-2. Install pip (if not already installed).
-3. Run the following command to install the required packages:
+If Conda is not installed, follow these steps:
 
-   pip install -r requirements.txt (if you dont want to run within a conda environment)
+1. Download the Miniconda installer for your operating system from the [official Miniconda website](https://docs.conda.io/en/latest/miniconda.html).
+2. Install Miniconda by running the installer and following the instructions on the screen.
 
-   conda env create -f environment.yml (if you'd like to run within a conda environment)
+## Step 2: Create the Conda Environment
 
+1. Open a terminal or command prompt.
 
-## Step 2: Open and run main.ipynb within this environment as normal
+2. Create a new conda environment by running:
+
+   conda create --name 9_fin_env python=3.10.5
+
+3. Activate conda environment by running
+
+   conda activate 9_fin_env
+
+4. Install required files by running
+   
+   pip install -r requirements.txt
+
+5. Activate Conda environment
+
+   conda activate 9_fin_env
+
+6. Open jupyter notebook and run main.ipynb
+
+   jupyter notebook
+
